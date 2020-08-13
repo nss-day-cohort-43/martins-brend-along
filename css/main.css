@@ -1,5 +1,8 @@
+@import "header.css";
+@import "tips.css";
+
 body {
-	background-color: aqua;
+	background-color: antiquewhite;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -7,7 +10,7 @@ body {
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 1em;
-	border: 5px dashed red;
+	/* border: 3px dashed burlywood; */
 }
 
 .fishList{
@@ -17,7 +20,7 @@ body {
 	
 }
 .fishList-card {
-	background-color: chartreuse;
+	background-color: lightcyan;
 	margin: 1em;
 	flex-basis: 25%;
 	padding: 0 1em;
@@ -32,7 +35,5 @@ body {
 	height: auto;
 }
 
-aside {
-	flex: 1;
-	background-color: cadetblue;
-}
+
+
