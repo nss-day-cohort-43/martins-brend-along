@@ -1,0 +1,14 @@
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: aqua
+}
+
+header h1 {
+	line-height: 1em;
+	color: darkblue;
+	text-align: center;
+	padding: 0 2em;
+	font-size: 1.5em;
+}
