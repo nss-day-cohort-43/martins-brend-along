@@ -1,0 +1,6 @@
+aside {
+	flex: 1;
+	background-color: rgb(0, 59, 101);
+	color: lightblue;
+	padding: 1em;
+}
