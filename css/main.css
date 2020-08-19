@@ -4,6 +4,7 @@
 body {
 	background-color: antiquewhite;
 	font-family: 'Poppins', sans-serif;
+	margin: 0;
 }
 
 #fishTank {
@@ -21,9 +22,15 @@ body {
 }
 .fishList-card {
 	background-color: lightcyan;
-	margin: 1em;
+	margin: .5em;
 	flex-basis: 25%;
-	padding: 0 1em;
+}
+
+.fishList-card ul {
+	list-style-type:none;
+	padding: .5em;
+	margin: .2em;
+	font-size: .8em;
 }
 
 .card-image {
@@ -35,5 +42,14 @@ body {
 	height: auto;
 }
 
+.section-main {
+	margin: 1em;
+}
+
+footer {
+	background-color: darkcyan;
+	color: whitesmoke;
+	text-align: center;
+}
 
 
