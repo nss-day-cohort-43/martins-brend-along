@@ -8,11 +8,11 @@ import { Fish } from "./Fish.js";
 
 export const FishList = () => {
 
-    // Get a reference to the `<article class="fishList">` element
+    // Get a reference to the `<tag class="fishList">` element
     // so we can place the fish where we want.
-    const contentElement = document.querySelector(".fishList")
+    const contentElement = document.querySelector(".fishList");
     // This is the loop of all the fish in the array.
-    const fishes = useFish()
+    const fishes = useFish();
 
     // Generate all of the HTML for the fish
     let fishHTMLRepresentation = "";
