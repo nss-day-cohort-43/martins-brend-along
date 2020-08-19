@@ -6,6 +6,7 @@ console.log("main.js loaded");
 // and the location that function is at.
 import { FishList } from './fish/FishList.js';
 import { TipList } from './tips/TipList.js';
+import { LocationList } from './locations/LocationList.js';
 
 // Assigns the function (which is returning)
 // the sliced array of objects, so we can use it.
@@ -22,3 +23,4 @@ import { TipList } from './tips/TipList.js';
 
 FishList();
 TipList();
+LocationList();
