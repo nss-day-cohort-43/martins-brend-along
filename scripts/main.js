@@ -5,6 +5,7 @@ console.log("main.js loaded");
 // Imports the function name you listed from the export command
 // and the location that function is at.
 import { useFish } from './FishDataProvider.js';
+import { FishList } from './FishList.js';
 
 // Assigns the function (which is returning)
 // the sliced array of objects, so we can use it.
@@ -14,6 +15,9 @@ const allTheFish = useFish()
 // You declare a variable, fish, to go through an array,
 // then what you want to happen as it goes through each item.
 // Currently, it console.logs each item in the array.
-for (const fish of allTheFish) {
-    console.log("THIS ITEM IS:", fish)
-}
+// We moved the for loop over to FishList.js
+// for (const fish of allTheFish) {
+//     console.log("THIS ITEM IS:", fish)
+// }
+
+FishList();
