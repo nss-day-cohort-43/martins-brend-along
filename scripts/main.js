@@ -7,7 +7,6 @@ console.log("main.js loaded");
 import { FishList } from './fish/FishList.js';
 import { TipList } from './tips/TipList.js';
 import { LocationList } from './locations/LocationList.js';
-import { sortMostHolyFish, sortSoldierFish, sortUnworthyFish } from "./fish/FishDataProvider.js";
 
 // Assigns the function (which is returning)
 // the sliced array of objects, so we can use it.
@@ -25,6 +24,3 @@ import { sortMostHolyFish, sortSoldierFish, sortUnworthyFish } from "./fish/Fish
 FishList();
 TipList();
 LocationList();
-sortMostHolyFish();
-sortSoldierFish();
-sortUnworthyFish();

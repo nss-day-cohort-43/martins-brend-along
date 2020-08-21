@@ -133,6 +133,9 @@ export const useFish = () => {
 //MARTIN'S MAYAN ADVENTURE//
 // ***********************//
 
+//WE are separating them out so we can have individual arrays and functions that are unique.
+// By having separate arrays, we gain more control over how we want to use them later.
+
 export const sortMostHolyFish = () => {
     //3, 6, 9
     const arrayMostHolyFish = [];
