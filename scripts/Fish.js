@@ -1,5 +1,5 @@
 export const Fish = (fishObj) => {
-	console.log("what is the fishObj", fishObj);
+	// console.log("what is the fishObj", fishObj);
 	return `
 		<div class="fishList-card">
 			<div class="card-image">
