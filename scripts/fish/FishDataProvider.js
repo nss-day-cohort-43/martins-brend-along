@@ -2,7 +2,7 @@ const fishCollection = [
     {
         givenName: "Big Blue",
         species: "Male Beta",
-        length: "2 inches",
+        length: 2,
         diet: "Flies",
         harvestLocation: "Beaches of Walmart",
         image: "cat.jpg"
@@ -10,7 +10,7 @@ const fishCollection = [
     {
         givenName: "Big Blue",
         species: "Male Beta",
-        length: "2 inches",
+        length: 2,
         diet: "Flies",
         harvestLocation: "Wally World",
         image: "cat.jpg"    
@@ -18,7 +18,7 @@ const fishCollection = [
     {
         givenName: "Big Orange",
         species: "Lil Orange",
-        length: "2 inches",
+        length: 2,
         diet: "Bugs",
         harvestLocation: "A Pool",
         image: "cat.jpg"
@@ -26,7 +26,7 @@ const fishCollection = [
     {
         givenName: "Purple",
         species: "Pretty Purple",
-        length: "5 inches",
+        length: 5,
         diet: "Squid",
         harvestLocation: "Ocean",
         image: "cat.jpg"    
@@ -42,7 +42,7 @@ const fishCollection = [
     {
         givenName: "Life of the Party",
         species: "Crazinus Fishifus",
-        length: "4 inches",
+        length: 4,
         diet: "Algae",
         harvestLocation: "Off of Austraila",
         image: "cat.jpg"    
@@ -50,7 +50,7 @@ const fishCollection = [
     {
         givenName: "Buford",
         species: "Dope Fish",
-        length: "22 inches",
+        length: 2,
         diet: "Fish Kibble",
         harvestLocation: "Fish Store",
         image: "cat.jpg"    
@@ -58,7 +58,7 @@ const fishCollection = [
     {
         givenName: "Fish Eater",
         species: "Kitty Kitty",
-        length: "1 foot",
+        length: 1,
         diet: "Fish",
         harvestLocation: "Outside the aquarium",
         image: "cat.jpg"    
@@ -66,7 +66,7 @@ const fishCollection = [
     {
         givenName: "Nemo",
         species: "Striped Fish",
-        length: "0.5 inches",
+        length: 5,
         diet: "Seaweed",
         harvestLocation: "Not too deep",
         image: "cat.jpg"    
@@ -74,7 +74,7 @@ const fishCollection = [
     {
         givenName: "Newest Fish",
         species: "Yello Fish",
-        length: "0.6 inches",
+        length: 6,
         diet: "Coral Reefs",
         harvestLocation: "Coral Reef",
         image: "cat.jpg"    
@@ -82,7 +82,7 @@ const fishCollection = [
     {
         givenName: "Franken Fish",
         species: "Homemade Fish",
-        length: "0.3 inches",
+        length: 3,
         diet: "Cheese",
         harvestLocation: "Operating Room",
         image: "cat.jpg"    
@@ -90,7 +90,7 @@ const fishCollection = [
     {
         givenName: "Torch",
         species: "Flame Angelfish",
-        length: "3 inches",
+        length: 3,
         diet: "Mealworms",
         harvestLocation: "San Jose, CA",
         image: "cat.jpg"
@@ -98,7 +98,7 @@ const fishCollection = [
     {
         givenName: "Rocky",
         species: "Blue Damselfish",
-        length: "2 inches",
+        length: 2,
         diet: "Copepods",
         harvestLocation: "Destin, FL",
         image: "cat.jpg"
@@ -106,7 +106,7 @@ const fishCollection = [
     {
         givenName: "Rudy",
         species: "Copperband Butterflyfish",
-        length: "5 inches",
+        length: 5,
         diet: "Mealworms",
         harvestLocation: "Costa Rica",
         image: "cat.jpg"
@@ -114,7 +114,7 @@ const fishCollection = [
     {
         givenName: "Simba",
         species: "Lionfish",
-        length: "6 inches",
+        length: 15,
         diet: "Mealworms",
         harvestLocation: "Argentina",
         image: "cat.jpg"
@@ -128,3 +128,32 @@ const fishCollection = [
 export const useFish = () => {
     return fishCollection.slice()
 }
+
+//Martin's Mayan Adventure
+export const sortMostHolyFish = () => {
+    //3, 6, 9
+    const arrayMostHolyFish = [];
+
+    //If length is divible by three, add to array
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+            arrayMostHolyFish.push(fish);
+        }
+
+    }
+    return sortMostHolyFish;
+};
+
+export const sortSoldierFish = () => {
+    //5, 10, X-15 (left off because divisble by 3), 20
+
+    const arraySoldierFish = [];
+
+    for (const fish of fishCollection) {
+        //divisible by 5 but don't include those also divisible by 3
+        if (fish.length % 5 === 0 && fish.length % 3 !== 0) {
+            arraySoldierFish.push(fish);
+        }
+    }
+
+};
