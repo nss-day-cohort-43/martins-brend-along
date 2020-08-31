@@ -26,14 +26,17 @@ const addFishToDom = (whichFishArray) => {
     // so we can place the fish where we want.
     const contentElement = document.querySelector(".fishList");
 
-     // Generate all of the HTML for the fish
-    let fishHTMLRepresentation = "";
-    for (const fish of whichFishArray) {
-        fishHTMLRepresentation += Fish(fish);
-    }
+    //  // Generate all of the HTML for the fish
+    // let fishHTMLRepresentation = "";
+    // for (const fish of whichFishArray) {
+    //     fishHTMLRepresentation += Fish(fish);
+    // }
     
     // Add to the existing HTML in the content element
-    contentElement.innerHTML += `
-        ${fishHTMLRepresentation}
+    // contentElement.innerHTML += `
+    //     ${fishHTMLRepresentation}
+    //  `
+     contentElement.innerHTML = `
+        ${whichFishArray.map(fish => Fish(fish)).join("")}
      `
 };
